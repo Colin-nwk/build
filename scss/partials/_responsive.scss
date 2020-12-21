@@ -1,0 +1,99 @@
+.container::before,
+.container.sign-in::before,
+.container.sign-up::before {
+  @include respond(phone) {
+    height: 100vh;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
+    z-index: 0;
+    transform: none;
+    right: 0;
+  }
+}
+
+/* .container.sign-in .col.sign-up {
+    transform: translateY(100%);
+} */
+
+.container.sign-in .col.sign-in,
+.container.sign-up .col.sign-up {
+  @include respond(phone) {
+    transform: translateY(0);
+  }
+}
+
+.content-row {
+  @include respond(phone) {
+    align-items: flex-start !important;
+  }
+}
+
+.content-row .col {
+  @include respond(phone) {
+    transform: translateY(0);
+    background-color: unset;
+  }
+}
+
+.col {
+  @include respond(phone) {
+    width: 100%;
+    position: absolute;
+    padding: 3.2rem;
+    background-color: var(--white);
+    border-top-left-radius: 3.2rem;
+    border-top-right-radius: 3.2rem;
+    transform: translateY(100%);
+    transition: 1s ease-in-out;
+  }
+}
+
+.row {
+  @include respond(phone) {
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+}
+
+.form {
+  @include respond(phone) {
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.text {
+  @include respond(phone) {
+    margin: 0;
+  }
+}
+
+.text p {
+  @include respond(tab-port) {
+    display: none;
+  }
+}
+
+.text h2 {
+  @include respond(tab-port) {
+    margin: 1.1rem;
+    font-size: 3rem;
+  }
+}
+
+.modal {
+  @include respond(phone) {
+    width: 90%;
+  }
+}
+
+.card-grid {
+  @include respond(tab-port) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+    margin: 1rem 2rem;
+  }
+}

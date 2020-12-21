@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/all.min.css" />
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Prisons UI</title>
+  </head>
+  <body id="login-body">
+    <div id="container" class="container">
+      <!-- FORM SECTION -->
+      <div class="row">
+        <!-- SIGN UP -->
+        <div class="col align-items-center flex-col sign-up">
+          <div class="form-wrapper align-items-center">
+            <form class="form sign-up">
+              <div class="input-group">
+                <i class="fas fas fa-user-alt"></i>
+                <input type="text" placeholder="Username" required />
+              </div>
+              <div class="input-group">
+                <i class="fas fa-envelope"></i>
+                <input type="email" placeholder="Email" required />
+              </div>
+              <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Password" required />
+              </div>
+              <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input
+                  type="password"
+                  placeholder="Confirm password"
+                  required
+                />
+              </div>
+              <button class="btn btn-three"><span>Sign up</span></button>
+              <p>
+                <span> Already have an account? </span>
+                <b onclick="toggle()" class="pointer"> Sign in here </b>
+              </p>
+            </form>
+          </div>
+        </div>
+        <!-- END SIGN UP -->
+        <!-- SIGN IN -->
+        <div class="col align-items-center flex-col sign-in">
+          <div class="form-wrapper align-items-center">
+            <form class="form sign-in" action="dashboard.html">
+              <div class="input-group">
+                <i class="fas fa-user-alt"></i>
+                <input type="text" placeholder="Username" required />
+              </div>
+              <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Password" required />
+              </div>
+              <button class="btn btn-three"><span>Log in</span></button>
+              <p class="pointer">
+                <b class="modal-btn"> Forgot password? </b>
+              </p>
+              <p>
+                <span> Don't have an account? </span>
+                <b onclick="toggle()" class="pointer"> Sign up here </b>
+              </p>
+            </form>
+          </div>
+        </div>
+        <!-- END SIGN IN -->
+      </div>
+      <!-- END FORM SECTION -->
+      <!-- CONTENT SECTION -->
+      <div class="row content-row">
+        <!-- SIGN IN CONTENT -->
+        <div class="col align-items-center flex-col">
+          <div class="text sign-in">
+            <h2>Welcome back</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit
+              obcaecati, accusantium molestias, laborum, aspernatur deserunt
+              officia voluptatum tempora dicta quo ab ullam. Assumenda enim
+              harum minima possimus dignissimos deserunt rem.
+            </p>
+          </div>
+          <div class="img sign-in">
+            <img src="assets/svg/undraw_Login_re_4vu2.svg" alt="welcome" />
+          </div>
+        </div>
+        <!-- END SIGN IN CONTENT -->
+        <!-- SIGN UP CONTENT -->
+        <div class="col align-items-center flex-col">
+          <div class="img sign-up">
+            <img src="assets/svg/undraw_security_o890.svg" alt="welcome" />
+          </div>
+          <div class="text sign-up">
+            <h2>Join with us</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit
+              obcaecati, accusantium molestias, laborum, aspernatur deserunt
+              officia voluptatum tempora dicta quo ab ullam. Assumenda enim
+              harum minima possimus dignissimos deserunt rem.
+            </p>
+          </div>
+        </div>
+        <!-- END SIGN UP CONTENT -->
+      </div>
+      <!-- END CONTENT SECTION -->
+    </div>
+    <!-- Modal Box -->
+    <div class="modal-bg">
+      <div class="modal">
+        <h2>Reset password</h2>
+        <form action="" class="modal-form">
+          <div class="input-group">
+            <i class="fas fa-envelope"></i>
+            <input type="email" placeholder="Email" required />
+          </div>
+          <button class="btn btn-three"><span>reset</span></button>
+          <span class="fas fa-times fa-2x modal-close"></span>
+        </form>
+      </div>
+    </div>
+    <!-- End Modal Box -->
+    <script src="js/app.js"></script>
+  </body>
+</html>

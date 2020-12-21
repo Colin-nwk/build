@@ -1,0 +1,28 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#login-body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+html {
+  // this defines what 1rem is
+  font-size: 62.5%; // 1rem = 10px /16px = 62.5%
+
+  @include respond(tab-port) {
+    font-size: 55%; // 1rem = 10px /16px = 62.5%
+  }
+}
+
+body {
+  font-family: "Open Sans", "Lato", sans-serif;
+  font-weight: 400;
+  color: var(--ash);
+  background-color: var(--white);
+}
