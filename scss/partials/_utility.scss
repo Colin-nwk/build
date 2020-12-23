@@ -50,13 +50,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 .user-col {
+  background-color: var(--white);
+  border-radius: 10px;
   &:nth-child(1) {
     width: 60%;
-    background-color: rebeccapurple;
   }
   &:nth-child(2) {
     width: 40%;
+    margin-left: 2rem;
   }
 }

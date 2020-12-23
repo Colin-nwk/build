@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/all.min.cSss" />
+    <link rel="stylesheet" href="assets/all.min.css" />
     <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
     <link rel="stylesheet" href="css/style.css" />
     <title>Dashboard</title>
@@ -159,54 +159,93 @@
         <div class="edit-profile" id="edit-profile">
           <div class="user-row">
             <div class="user-col">
-              <h3 class="text">Edit Profile</h3>
+              <h3>Edit Profile</h3>
               <form action="#" class="edit-profile-form">
-                <div class="col">
-                  <div class="input-group">
-                    <i class="fas fas fa-user-alt"></i>
-                    <input type="text" placeholder="Username" disabled />
+                <div class="form-grid">
+                  <div class="form__group">
+                    <input
+                      type="email"
+                      class="form__input"
+                      placeholder="email"
+                      id="email"
+                      required
+                    />
+                    <label for="email" class="form__label">Email: </label>
+                  </div>
+                  <div class="form__group">
+                    <input
+                      type="text"
+                      class="form__input"
+                      placeholder="First Name"
+                      id="firstname"
+                      required
+                    />
+                    <label for="firstname" class="form__label"
+                      >First Name:
+                    </label>
+                  </div>
+
+                  <div class="form__group">
+                    <input
+                      type="text"
+                      class="form__input"
+                      placeholder="Surname"
+                      id="surname"
+                      required
+                    />
+                    <label for="surname" class="form__label">Surname: </label>
+                  </div>
+                  <div class="form__group">
+                    <input
+                      type="tel"
+                      class="form__input"
+                      placeholder="Telephone"
+                      id="tel"
+                      required
+                    />
+                    <label for="tel" class="form__label">Telephone: </label>
+                  </div>
+
+                  <div class="form__group">
+                    <input
+                      type="text"
+                      class="form__input"
+                      placeholder="Address"
+                      id="address"
+                      required
+                    />
+                    <label for="address" class="form__label">Address: </label>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="input-group">
-                    <i class="fas fas fa-user-alt"></i>
-                    <input type="text" placeholder="First Name" />
-                  </div>
-                </div>
-                <div class="col"></div>
-                <div class="col"></div>
-                <div class="input-group">
-                  <i class="fas fas fa-user-alt"></i>
-                  <input type="text" placeholder="Last Name" />
-                </div>
-                <div class="input-group">
-                  <i class="fas fa-envelope"></i>
-                  <input type="email" placeholder="Email" disabled />
-                </div>
-                <div class="input-group">
-                  <i class="fas fas fa-map"></i>
-                  <input type="text" placeholder="Address" />
-                </div>
-                <div class="input-group">
-                  <i class="fas fa-mobile-alt"></i>
-                  <input type="tel" placeholder="Telephone" />
-                </div>
-                <div class="input-group">
-                  <i class="fab fa-readme"></i>
-                  <input type="text" placeholder="About me" />
+                <div class="form__group">
+                  <input
+                    type="text"
+                    class="form__input"
+                    placeholder="About"
+                    id="about"
+                    required
+                  />
+                  <label for="about" class="form__label">About: </label>
                 </div>
                 <button class="btn btn-three"><span>Sign up</span></button>
               </form>
             </div>
             <div class="user-col">
               <div class="profile-card">
-                <img src="" alt="" srcset="" class="profile" />
-                <h3 class="profile-name">User Name</h3>
-                <p class="about-user">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Laboriosam odio at perspiciatis fugit eum mollitia nulla
-                  repellat, modi nihil placeat.
-                </p>
+                <img
+                  src="assets/svg/undraw_Login_re_4vu2 (1).svg"
+                  alt=""
+                  srcset=""
+                  class="profile"
+                />
+                <div class="profile-content">
+                  <h3 class="profile-name">User Name</h3>
+                  <p class="about-user">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Laboriosam odio at perspiciatis fugit eum mollitia nulla
+                    repellat, modi nihil placeat.
+                  </p>
+                </div>
               </div>
             </div>
           </div>

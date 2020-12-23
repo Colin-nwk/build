@@ -148,3 +148,66 @@
   transform: translate(100%, 0);
   right: 50%;
 }
+
+.edit-profile {
+  margin-top: 4rem;
+  min-width: 30rem;
+
+  .user-col {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+    h3 {
+      margin: 3rem 0;
+    }
+  }
+}
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  grid-gap: 2rem;
+}
+.form__input {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  color: inherit;
+  font-family: inherit;
+  padding: 0.9rem;
+  //   border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-bottom: 3px solid #ccc;
+  width: 90%;
+  display: block;
+  transition: all 0.3s ease;
+  margin: 1rem auto;
+}
+
+.form__input:focus {
+  outline: none;
+  border-bottom: 3px solid var(--success-color);
+  // box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.form__input:focus:invalid {
+  border-bottom: 3px solid var(--warning-color);
+}
+
+.form__input::placeholder {
+  color: #999;
+}
+
+.form__label {
+  font-size: 1.4rem;
+  margin-left: 3rem;
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.3s ease;
+  transform: translateY(-6rem);
+}
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(1rem);
+}
