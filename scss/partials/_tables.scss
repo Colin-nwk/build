@@ -1,0 +1,29 @@
+.task-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  .task-item {
+    padding: 1rem;
+    line-height: 2;
+    display: block;
+    &:not(:last-child) {
+      border-bottom: 2px solid var(--gray-3);
+    }
+  }
+  .task-text {
+    display: block;
+    position: relative;
+
+    span {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+
+      &:nth-child(1) {
+        right: -10%;
+      }
+    }
+  }
+}
