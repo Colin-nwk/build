@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/all.min.css" />
     <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Roboto:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Dashboard</title>
   </head>
@@ -261,7 +266,7 @@
                   <p class="task-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     distinctio velit laborum iure.
-                    <span class="fas fa-times"></span>
+                    <span class="fas fa-times cancel"></span>
                     <span class="fas fa-pen-fancy"></span>
                   </p>
                 </li>
@@ -269,45 +274,37 @@
                   <p class="task-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing
                     elitdistinctio velit laborum iure.
-                    <span class="fas fa-times"></span>
-                    <span class="fas fa-pen-fancy"></span>
+                    <span class="fas fa-times cancel"></span>
+                    <span class="fas fa-pen-fancy approval"></span>
                   </p>
                 </li>
                 <li class="task-item">
                   <p class="task-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    <span class="fas fa-times"></span>
-                    <span class="fas fa-pen-fancy"></span>
+                    <span class="fas fa-times cancel"></span>
+                    <span class="fas fa-pen-fancy approval"></span>
                   </p>
                 </li>
               </ul>
             </div>
-            <div class="task-section">
+            <div class="task-section approved-task">
               <h3>Approved requests</h3>
               <ul class="task-list">
                 <li class="task-item">
                   <p class="task-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     distinctio velit laborum iure.
-                    <span class="fas fa-times"></span>
-                    <span class="fas fa-pen-fancy"></span>
                   </p>
                 </li>
                 <li class="task-item">
                   <p class="task-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing
                     elitdistinctio velit laborum iure.
-                    <span class="fas fa-times"></span>
-                    <span class="fas fa-pen-fancy"></span>
                   </p>
                 </li>
                 <li class="task-item">
                   <p class="task-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    <div>
-                      <span class="fas fa-times"></span>
-                      <span class="fas fa-pen-fancy"></span>
-                    </div>
                   </p>
                 </li>
               </ul>
@@ -315,26 +312,68 @@
           </div>
         </div>
         <!-- End mails -->
-        <div class="admins">
-          <h3 class="header">Admins</h3>
-          <ul class="admin-list">
-            <li class="admin-item">
-              <p class="text">Name of Admin</p>
-              <input type="checkbox" name="" id="" />
-              <span></span>
-            </li>
-          </ul>
+        <div class="users">
+          <h3>Users</h3>
+          <table id="user-privilege">
+            <tr class="table-head">
+              <th>Code</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Read</th>
+              <th>Write</th>
+              <th>Create</th>
+              <th>Super</th>
+            </tr>
+            <tr>
+              <td>010</td>
+              <td>Collins</td>
+              <td>Collinsnwoko05@gmail.com</td>
+              <td><input type="checkbox" name="read" id="read" /></td>
+              <td><input type="checkbox" name="write" id="write" /></td>
+              <td><input type="checkbox" name="create" id="create" /></td>
+              <td><input type="checkbox" name="Super" id="Super" /></td>
+            </tr>
+            <tr>
+              <td>010</td>
+              <td>Collins</td>
+              <td>Collinsnwoko05@gmail.com</td>
+              <td><input type="checkbox" name="read" id="read" /></td>
+              <td><input type="checkbox" name="write" id="write" /></td>
+              <td><input type="checkbox" name="create" id="create" /></td>
+              <td><input type="checkbox" name="Super" id="Super" /></td>
+            </tr>
+          </table>
         </div>
-        <div class="users" id="users">
-          <h3 class="header">Admins</h3>
-          <ul class="userlist">
-            <li class="user-item">
-              <p class="text">User of Admin</p>
-              <input type="checkbox" name="" id="" />
-              <span></span>
-              <span class="far fa-rebel"></span>
-            </li>
-          </ul>
+        <div class="user-control">
+          <h2>Smart table</h2>
+          <table class="smart-table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>User</th>
+                <th>Admin</th>
+                <th>Super</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>010</td>
+                <td>Collins</td>
+                <td>collinsnwoko05@gmail.com</td>
+                <td>
+                  <input type="checkbox" name="user-check" id="user-check" />
+                </td>
+                <td>
+                  <input type="checkbox" name="admin-check" id="admin-check" />
+                </td>
+                <td>
+                  <input type="checkbox" name="super-check" id="super-check" />
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </section>
       <!-- End Main Content-->

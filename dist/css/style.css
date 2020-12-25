@@ -59,7 +59,7 @@ html {
 }
 
 body {
-  font-family: "Open Sans", "Lato", sans-serif;
+  font-family: "Roboto", "Lato", sans-serif;
   font-weight: 300;
   color: var(--ash);
   background-color: var(--white);
@@ -161,11 +161,25 @@ a {
   grid-gap: 2rem;
 }
 
-.task-grid .task-section {
+.task-section {
   background-color: var(--white);
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 1rem 2rem;
+}
+
+.approval {
+  color: var(--blue-color);
+  font-weight: 700;
+  transition: 0.4s ease;
+}
+
+.approval:hover, .approval:active {
+  color: var(--success-color);
+}
+
+.cancel {
+  color: var(--danger-color);
 }
 
 .btn {
@@ -561,6 +575,7 @@ a {
   padding: 1rem;
   line-height: 2;
   display: block;
+  width: 100%;
 }
 
 .task-list .task-item:not(:last-child) {
@@ -570,16 +585,48 @@ a {
 .task-list .task-text {
   display: block;
   position: relative;
+  text-align: start;
 }
 
 .task-list .task-text span {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  margin-right: auto;
 }
 
 .task-list .task-text span:nth-child(1) {
-  right: -10%;
+  right: 1rem;
+}
+
+.task-list .task-text span:nth-child(2) {
+  right: 5rem;
+}
+
+.users {
+  margin-top: 4rem;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 2rem 1rem;
+  max-width: 72rem;
+}
+
+table {
+  font-size: 1.6rem;
+  display: flex;
+  width: 100%;
+  margin: 1rem auto;
+}
+
+tr {
+  padding: 1rem;
+  line-height: 2;
+}
+
+td {
+  border-bottom: 2px solid var(--gray);
+  padding: 1rem 2.5rem;
 }
 
 .form-wrapper {
@@ -1088,6 +1135,18 @@ h2 {
   .navbar-search {
     display: none;
     visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .task-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .email {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
