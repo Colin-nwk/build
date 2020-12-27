@@ -609,24 +609,41 @@ a {
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 2rem 1rem;
-  max-width: 72rem;
 }
 
 table {
+  padding: 2rem;
   font-size: 1.6rem;
-  display: flex;
-  width: 100%;
-  margin: 1rem auto;
+  border-collapse: collapse;
+  width: 50%;
+  background-color: var(--white);
+  border-radius: 10px !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+table thead {
+  background-color: var(--danger-color);
+  color: var(--white);
+}
+
+td,
+th {
+  text-align: start;
+  padding: 1.5rem 2rem;
+}
+
+th {
+  border-radius: inherit;
 }
 
 tr {
   padding: 1rem;
-  line-height: 2;
+  line-height: 1.5;
 }
 
-td {
+tr:not(:last-child) {
   border-bottom: 2px solid var(--gray);
-  padding: 1rem 2.5rem;
 }
 
 .form-wrapper {
@@ -834,6 +851,22 @@ td {
   opacity: 0;
   visibility: hidden;
   transform: translateY(1rem);
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label span {
+  color: var(--gray-3);
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+}
+
+input[type="checkbox"]:checked + label span {
+  transform: rotateZ(360deg);
+  color: var(--success-color);
 }
 
 .counter {
@@ -1147,6 +1180,53 @@ h2 {
 @media only screen and (max-width: 56.25em) {
   .email {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .table-title {
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .smart-table thead {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .smart-table tr,
+  .smart-table td {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .smart-table tr:not(:last-child) {
+    border-bottom: 5px solid var(--blue-color);
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .smart-table td {
+    padding-left: 54%;
+    position: relative;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .smart-table td::before {
+    position: absolute;
+    padding: 0.5rem;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 45%;
+    content: attr(data-col-title);
+    font-weight: bold;
+    background-color: var(--danger-color);
+    color: var(--white);
   }
 }
 /*# sourceMappingURL=style.css.map */

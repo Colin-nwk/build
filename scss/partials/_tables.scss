@@ -32,34 +32,45 @@
     }
   }
 }
-// .approved-task {
-//   h3 {
-//     // display: block;
-//     color: var(--white);
-//     background-color: var(--success-color);
-//   }
-// }
+
 .users {
   margin-top: 4rem;
   background-color: var(--white);
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 2rem 1rem;
-  max-width: 72rem;
+  // max-width: 72rem;
 }
 
 table {
+  padding: 2rem;
+  // margin: 2rem;
   font-size: 1.6rem;
-  display: flex;
-  width: 100%;
-  margin: 1rem auto;
+  border-collapse: collapse;
+  width: 50%;
+  background-color: var(--white);
+  border-radius: 10px !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  outline: none;
+
+  thead {
+    background-color: var(--danger-color);
+    color: var(--white);
+  }
+}
+td,
+th {
+  text-align: start;
+  padding: 1.5rem 2rem;
+}
+th {
+  border-radius: inherit;
 }
 
 tr {
   padding: 1rem;
-  line-height: 2;
-}
-td {
-  border-bottom: 2px solid var(--gray);
-  padding: 1rem 2.5rem;
+  line-height: 1.5;
+  &:not(:last-child) {
+    border-bottom: 2px solid var(--gray);
+  }
 }

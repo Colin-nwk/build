@@ -345,30 +345,99 @@
           </table>
         </div>
         <div class="user-control">
-          <h2>Smart table</h2>
+          <h2 class="table-title">Smart table</h2>
           <table class="smart-table">
-            <thead>
-              <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Email</th>
-                <th>User</th>
-                <th>Admin</th>
-                <th>Super</th>
-              </tr>
-            </thead>
+            <!-- <thead> -->
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>User</th>
+              <th>Admin</th>
+              <th>Super</th>
+            </tr>
+            <!-- </thead> -->
             <tbody>
               <tr>
-                <td>010</td>
-                <td>Collins</td>
-                <td>collinsnwoko05@gmail.com</td>
-                <td>
+                <td data-col-title="ID">010</td>
+                <td data-col-title="Name">Collins</td>
+                <td data-col-title="Email">collinsnwoko05@gmail.com</td>
+                <td data-col-title="User">
+                  <input type="checkbox" name="user-check" id="user-check" />
+                  <label for="user-check">
+                    <span class="fas fa-check-circle"></span>
+                  </label>
+                </td>
+                <td data-col-title="Admin">
+                  <input type="checkbox" name="sdmin-check" id="admin-check" />
+                  <label for="admin-check">
+                    <span class="fas fa-check-circle"></span>
+                  </label>
+                </td>
+                <td data-col-title="Super">
+                  <input type="checkbox" name="super-check" id="super-check" />
+                  <label for="super-check">
+                    <span class="fas fa-check-circle"></span>
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <td data-col-title="ID">010</td>
+                <td data-col-title="Name">Collins</td>
+                <td data-col-title="Email">collinsnwoko05@gmail.com</td>
+                <td data-col-title="User">
+                  <input type="checkbox" name="super-check" id="user-check" />
+                  <label for="user-check">
+                    <span class="fas fa-check-circle"></span>
+                  </label>
+                </td>
+                <td data-col-title="Admin">
+                  <input type="checkbox" name="super-check" id="admin-check" />
+                  <label for="super-check">
+                    <span class="fas fa-check-circle"></span>
+                  </label>
+                </td>
+                <td data-col-title="Super">
+                  <input type="checkbox" name="super-check" id="super-check" />
+                  <label for="super-check">
+                    <span class="fas fa-check-circle"></span>
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <td data-col-title="ID">040</td>
+                <td data-col-title="Name">Collins</td>
+                <td data-col-title="Email">collinsnwoko05@gmail.com</td>
+                <td data-col-title="User">
+                  <input type="checkbox" name="super-check" id="user-check" />
+                  <label for="user-check">
+                    <span class="fas fa-check-circle"></span>
+                  </label>
+                </td>
+                <td data-col-title="Admin">
+                  <input type="checkbox" name="super-check" id="admin-check" />
+                  <label for="super-check">
+                    <span class="fas fa-check-circle"></span>
+                  </label>
+                </td>
+                <td data-col-title="Super">
+                  <input type="checkbox" name="super-check" id="super-check" />
+                  <label for="super-check">
+                    <span class="fas fa-check-circle"></span>
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <td data-col-title="ID">020</td>
+                <td data-col-title="Name">Collins</td>
+                <td data-col-title="Email">collinsnwoko05@gmail.com</td>
+                <td data-col-title="User">
                   <input type="checkbox" name="user-check" id="user-check" />
                 </td>
-                <td>
+                <td data-col-title="Admin">
                   <input type="checkbox" name="admin-check" id="admin-check" />
                 </td>
-                <td>
+                <td data-col-title="Super">
                   <input type="checkbox" name="super-check" id="super-check" />
                 </td>
               </tr>

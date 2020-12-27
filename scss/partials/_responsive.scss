@@ -161,3 +161,47 @@
     display: none;
   }
 }
+.table-title {
+  @include respond(phone) {
+    text-align: left;
+  }
+}
+
+.smart-table {
+  thead {
+    @include respond(phone) {
+      display: none;
+    }
+  }
+  tr,
+  td {
+    @include respond(phone) {
+      display: block;
+    }
+  }
+  tr:not(:last-child) {
+    @include respond(phone) {
+      border-bottom: 5px solid var(--blue-color);
+    }
+  }
+  td {
+    @include respond(phone) {
+      padding-left: 54%;
+      position: relative;
+    }
+    &::before {
+      @include respond(phone) {
+        position: absolute;
+        padding: 0.5rem;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 45%;
+        content: attr(data-col-title);
+        font-weight: bold;
+        background-color: var(--danger-color);
+        color: var(--white);
+      }
+    }
+  }
+}

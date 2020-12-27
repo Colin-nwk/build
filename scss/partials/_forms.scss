@@ -211,3 +211,24 @@
   visibility: hidden;
   transform: translateY(1rem);
 }
+
+// check boxes
+input[type="checkbox"] {
+  display: none;
+
+  + label {
+    // position: relative;
+    span {
+      // transform: scale(0);
+      color: var(--gray-3);
+      cursor: pointer;
+      transition: all 0.5s ease-in-out;
+      position: relative;
+    }
+  }
+
+  &:checked + label span {
+    transform: rotateZ(360deg);
+    color: var(--success-color);
+  }
+}
